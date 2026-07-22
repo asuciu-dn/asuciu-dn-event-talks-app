@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.search-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#category-search {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.schedule-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #007bff;
+    background-color: #e9f5ff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-item:hover {
+    background-color: #d1e7ff;
+}
+
+.schedule-item.break {
+    border-left: 5px solid #6c757d;
+    background-color: #f8f9fa;
+    cursor: default;
+}
+
+.schedule-item.break:hover {
+    background-color: #e2e6ea;
+}
+
+.schedule-item h3 {
+    margin-top: 0;
+    color: #0056b3;
+}
+
+.schedule-item.break h3 {
+    color: #495057;
+}
+
+.schedule-item .time {
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.schedule-item .speakers,
+.schedule-item .categories {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.schedule-item .description {
+    font-size: 0.9em;
+    color: #444;
+    display: none; /* Hidden by default, shown when expanded */
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.schedule-item.expanded .description {
+    display: block;
+}
+
+.category-tag {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    #category-search {
+        width: 95%;
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "event-schedule-builder",
+  "version": "1.0.0",
+  "description": "Build script for the technical event schedule website",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
